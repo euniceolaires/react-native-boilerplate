@@ -31,10 +31,30 @@ allprojects {
     }
 }
 
+subprojects {
+    afterEvaluate {
+        project -> if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 26
+                buildToolsVersion '26.0.1'
+            }
+        }
+    }
+}
+
 ext {
-    buildToolsVersion = "26.0.3"
+    buildToolsVersion = "26.0.1"
     minSdkVersion = 16
     compileSdkVersion = 26
     targetSdkVersion = 26
-    supportLibVersion = "26.1.0"
+    supportLibVersion = "23.0.1"
 }
+
+//ext {
+//    buildToolsVersion = "26.0.3"
+//    minSdkVersion = 16
+//    compileSdkVersion = 26
+//    targetSdkVersion = 26
+//    supportLibVersion = "26.1.0"
+//}
+

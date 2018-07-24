@@ -1,4 +1,8 @@
 
-import registerApp from './app/index';
+// import registerApp from './app/index';
 
-registerApp();
+// registerApp();
+
+import App from './app/index';
+
+export default new App();

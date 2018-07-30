@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import PropTypes from 'prop-types';
+
 import Container from '../components/Container';
 
-class Screen extends Component {
+class Screen1 extends Component {
+  static propTypes = {
+    navigator: PropTypes.object.isRequired,
+  }
+
   handlePress = () => {
-    this.props.navigator.push({
+    const { navigator } = this.props;
+    navigator.push({
       screen: 'Screen3',
       title: 'Screen 3',
     });
@@ -13,11 +19,12 @@ class Screen extends Component {
   render() {
     return (
       <Container
-        backgroundColor="#F44336"
+        backgroundColor="#9932CC"
+        // backgroundColor="#F44336"
         onPress={this.handlePress}
       />
     );
   }
 }
 
-export default Screen;
+export default Screen1;

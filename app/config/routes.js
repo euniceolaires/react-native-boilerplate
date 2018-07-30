@@ -19,7 +19,7 @@ const Navigator = (root) => {
     case 'login':
       Navigation.startSingleScreenApp({
         screen: {
-          screen: 'ReactNativeReduxExample.Login',
+          screen: 'Login',
           title: 'Welcome',
           navigatorStyle: {},
           navigatorButtons: {},

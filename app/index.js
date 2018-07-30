@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
 import { Provider } from 'react-redux';
 
 import * as navigation from './actions/navigation';
@@ -13,7 +12,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     store.subscribe(this.onStoreUpdate.bind(this));
-    store.dispatch(navigation.changeAppRoot('home'));
+    store.dispatch(navigation.changeAppRoot('login'));
   }
 
   onStoreUpdate() {

@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+
 import Container from '../components/Container';
 
-class Screen extends Component {
+class Screen2 extends Component {
+  handlePress = () => {
+    console.log('press');
+  };
+
   render() {
     return (
       <Container
-        backgroundColor="#c95e0c"
-        onPress={() => console.log('press')}
+        backgroundColor="#FFD700"
+        // backgroundColor="#c95e0c"
+        onPress={this.handlePress}
       />
     );
   }
 }
 
-export default Screen;
+export default Screen2;

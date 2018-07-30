@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import PropTypes from 'prop-types';
+
 import Container from '../components/Container';
 
-class Screen extends Component {
+class Screen4 extends Component {
+  static propTypes = {
+    navigator: PropTypes.object.isRequired,
+  };
+
+
   handlePress = () => {
-    this.props.navigator.dismissModal();
+    const { navigator } = this.props;
+    navigator.dismissModal();
   };
 
   render() {
@@ -17,4 +24,4 @@ class Screen extends Component {
   }
 }
 
-export default Screen;
+export default Screen4;

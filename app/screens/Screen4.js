@@ -17,7 +17,8 @@ class Screen4 extends Component {
   render() {
     return (
       <Container
-        backgroundColor="#01446b"
+        backgroundColor="#FFB6C1"
+        // backgroundColor="#01446b"
         onPress={this.handlePress}
       />
     );

@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "react-native run-ios --simulator 'iPhone X'",
+    "android": "react-native run-android",
     "test": "jest"
   },
   "dependencies": {
+    "lodash": "4.17.10",
     "prop-types": "15.6.2",
     "react": "16.4.1",
     "react-native": "^0.56.0",
